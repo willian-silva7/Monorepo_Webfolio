@@ -1,0 +1,112 @@
+[
+  {
+    "group": "admin",
+    "permissions": [
+      {
+        "resource": "*",
+        "methods": "*",
+        "action": "allow"
+      }
+    ]
+  },
+  {
+    "group": "teacher",
+    "permissions": [
+      {
+        "resource": "portfolio/*",
+        "methods": ["POST", "GET","PUT"],
+        "action": "allow"
+      },
+      {
+        "resource": "profile/*",
+        "methods": "*",
+        "action": "allow"
+      },
+      {
+        "resource": "observation/*",
+        "methods": "*",
+        "action": "allow"
+      },
+      {
+        "resource": "classroom/*",
+        "methods": ["POST", "GET","PUT"],
+        "action": "allow"
+      }
+    ]
+  },
+  {
+    "group": "parent",
+    "permissions": [
+      {
+        "resource": "portfolio/*",
+        "methods": ["POST", "GET","PUT"],
+        "action": "allow"
+      },
+      {
+        "resource": "profile/*",
+        "methods": "*",
+        "action": "allow"
+      },
+      {
+        "resource": "observation/*",
+        "methods": "*",
+        "action": "allow"
+      },
+      {
+        "resource": "classroom/*",
+        "methods": ["POST", "GET","PUT"],
+        "action": "allow"
+      }
+    ]
+  },
+  {
+    "group": "child",
+    "permissions": [
+      {
+        "resource": "portfolio/*",
+        "methods": ["POST", "GET","PUT"],
+        "action": "allow"
+      },
+      {
+        "resource": "profile/*",
+        "methods": "*",
+        "action": "allow"
+      },
+      {
+        "resource": "observation/*",
+        "methods": "*",
+        "action": "allow"
+      },
+      {
+        "resource": "classroom/*",
+        "methods": ["POST", "GET","PUT"],
+        "action": "allow"
+      }
+    ]
+  },
+  {
+    "group": "manager",
+    "permissions": [
+      {
+        "resource": "portfolio/*",
+        "methods": ["GET"],
+        "action": "allow"
+      },
+      {
+        "resource": "profile/*",
+        "methods": "*",
+        "action": "allow"
+      },
+      {
+        "resource": "observation/*",
+        "methods": ["GET"],
+        "action": "allow"
+      },
+      {
+        "resource": "classroom/*",
+        "methods": ["GET"],
+        "action": "allow"
+      }
+    ]
+  }
+]
